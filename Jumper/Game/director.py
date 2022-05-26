@@ -4,6 +4,7 @@ from game.jumper import Jumper
 
 
 class Director:
+    
     """A person who directs the game. 
     
     The responsibility of a Director is to control the sequence of play.
@@ -16,6 +17,7 @@ class Director:
     """
 
     def __init__(self):
+       
         """Constructs a new Director.
         
         Args:
@@ -27,6 +29,7 @@ class Director:
         self._terminal_service = TerminalService()
         
     def start_game(self):
+        
         """Starts the game by running the main game loop.
         
         Args:
@@ -37,6 +40,7 @@ class Director:
             self._do_outputs()
 
     def _get_inputs(self):
+        
         """Gets a random word
 
         Args:
@@ -46,6 +50,7 @@ class Director:
         self._jumper.guess_letter(new_letter)
         
     def _do_outputs(self):
+        
         """Provides a hint for the jumper to use.
 
         Args:
